@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://docfoltgstlvk"]
+
+[ext_resource type="Script" path="res://Scripts/Camera3D.gd" id="1_a7anr"]
+[ext_resource type="Script" path="res://Scripts/title.gd" id="1_fikr0"]
+[ext_resource type="Texture2D" uid="uid://c5rgvjnexf6lc" path="res://Assets/Title Screen/SkyBox.png" id="1_w0cpk"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_4tjt3"]
+panorama = ExtResource("1_w0cpk")
+
+[sub_resource type="Sky" id="Sky_ecldn"]
+sky_material = SubResource("PanoramaSkyMaterial_4tjt3")
+
+[sub_resource type="Environment" id="Environment_4yl57"]
+background_mode = 2
+sky = SubResource("Sky_ecldn")
+ambient_light_color = Color(0, 0.780392, 0.788235, 1)
+reflected_light_source = 2
+
+[node name="TitleScreen" type="Node3D"]
+script = ExtResource("1_fikr0")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19209e-07, 0.896619, 2.65591)
+script = ExtResource("1_a7anr")
+
+[node name="TitleText" type="Label3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19209e-07, 0.825386, -2.65591)
+text = "TURBO TURTLES"
+
+[node name="Play" type="Button" parent="Camera3D"]
+offset_left = 442.0
+offset_top = 325.0
+offset_right = 689.0
+offset_bottom = 404.0
+text = "Play"
+
+[node name="Exit" type="Button" parent="Camera3D"]
+offset_left = 442.0
+offset_top = 424.0
+offset_right = 689.0
+offset_bottom = 503.0
+text = "Exit"
+
+[node name="SkyBox" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4yl57")
+
+[connection signal="pressed" from="Camera3D/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Camera3D/Exit" to="." method="_on_exit_pressed"]

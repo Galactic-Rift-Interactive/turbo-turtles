@@ -1,7 +1,7 @@
 Model Dimensions Spec Sheet
 ============================
 
-* All assets were measured and exported in metres.
+* All assets were measured and exported in metres. The scale was detemined by the player being a 2m x 1m x 1m cube.
 
 Assets:
 
@@ -9,4 +9,8 @@ Assets:
 > Forest Tree 02 - height: 14.6293m; width: 6.867m; Trunk base diametre: 1.46m;
 > Coin - Diametre: 1m; Thickness: 0.6m
 > Barrel - height: 1.75m; width: 1.67m; Outer Diametre (rings): 2.29m; Inner Diametre (Barrel top): 1.95m 
-> Raised Track 01: height (side view): 4.49m; width (side view): 115.77m; height (top view): 206.958m; width (top view): 103.047m  
+> Raised Track 01 - height (side view): 4.49m; width (side view): 115.77m; height (top view): 206.958m; width (top view): 103.047m
+> Simple Dirt Track 01 - height (top view): 102.97m; width (top view): 112.62m; Thickness: 0.1m
+> Stump - height: 0.91m; width: 1.68m; Outer diametre: 1.26m
+> Rock 01 - height: 1.1698m; width: 1.686m
+> Rock 02 - height: 2.476m; width: 2.277m

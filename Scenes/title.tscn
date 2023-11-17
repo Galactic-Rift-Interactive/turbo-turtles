@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://docfoltgstlvk"]
 
-[ext_resource type="Script" path="res://Scripts/Camera3D.gd" id="1_a7anr"]
+[ext_resource type="Script" path="res://Scripts/camera.gd" id="1_a7anr"]
 [ext_resource type="Script" path="res://Scripts/title.gd" id="1_fikr0"]
 [ext_resource type="Texture2D" uid="uid://c5rgvjnexf6lc" path="res://Assets/Title Screen/SkyBox.png" id="1_w0cpk"]
 

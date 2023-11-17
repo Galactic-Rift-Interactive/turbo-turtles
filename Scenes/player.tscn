@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cd4dhswe17si1"]
 
-[ext_resource type="Script" path="res://Scripts/CharacterBody3D.gd" id="1_rmfro"]
+[ext_resource type="Script" path="res://Scripts/player-old.gd" id="1_rmfro"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p16a1"]
 albedo_color = Color(0, 0, 0, 1)
@@ -27,3 +27,4 @@ shape = SubResource("ConvexPolygonShape3D_2yf12")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.532331, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Pivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.322289, 2.90177)

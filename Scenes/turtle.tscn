@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=3 uid="uid://bqn4o4v82rtv4"]
 
-[ext_resource type="Script" path="res://turtlePlayer.gd" id="1_p3232"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_p3232"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l7tt2"]
 resource_name = "DefaultMaterial"

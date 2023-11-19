@@ -3,8 +3,8 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
-const MAX_SPEED = 20.0
-const MAX_TURBO_SPEED = 50.0
+const MAX_SPEED = 50.0
+const MAX_TURBO_SPEED = 100.0
 const ACCELERATION = 5.0
 const ROTATION_SPEED = 2.0
 const TURBO_SPEED_FACTOR = 3.0
@@ -48,7 +48,7 @@ func _physics_process(delta):
 	if prevent_turbo:
 		turbo_fuel = clamp(turbo_fuel + TURBO_INCREASE_AMOUNT * delta, 0, 100)
 	
-	$Label3D.text = "TURBO: " + str(int(turbo_fuel))
+	#$Label3D.text = "TURBO: " + str(int(turbo_fuel))
 	
 	if is_on_floor():
 		last_position = position

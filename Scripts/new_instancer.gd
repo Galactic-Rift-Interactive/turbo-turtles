@@ -155,7 +155,8 @@ func create_multimesh():
 		multi_mesh.mesh = instance_mesh.mesh
 		
 		# May need to change this to get the instance actual texture.
-		multi_mesh.mesh.surface_set_material(0, instance_mesh.get_surface_override_material(0))
+		for x in range(instance_mesh.get_surface_override_material_count()):
+			multi_mesh.mesh.surface_set_material(x, instance_mesh.get_surface_override_material(x))
 		
 	instance_row = sqrt(instance_amount)
 	offset = round(instance_amount/instance_row)

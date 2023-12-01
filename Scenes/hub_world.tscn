@@ -65,7 +65,7 @@ script = ExtResource("4_omaik")
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraController"]
 transform = Transform3D(1, 0, 0, 0, 0.973956, 0.226736, 0, -0.226736, 0.973956, 0, 1.7667, 0)
 collision_mask = 2
-spring_length = 5.0
+spring_length = 3.0
 
 [node name="Camera3D" type="Camera3D" parent="CameraController/SpringArm3D"]
 

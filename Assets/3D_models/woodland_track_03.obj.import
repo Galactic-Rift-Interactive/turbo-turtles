@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://y2qvbm2ktnvw"
+path="res://.godot/imported/woodland_track_03.obj-f1bdb9700e9d4200b217e59c743f8928.mesh"
+
+[deps]
+
+files=["res://.godot/imported/woodland_track_03.obj-f1bdb9700e9d4200b217e59c743f8928.mesh"]
+
+source_file="res://Assets/3D_models/woodland_track_03.obj"
+dest_files=["res://.godot/imported/woodland_track_03.obj-f1bdb9700e9d4200b217e59c743f8928.mesh", "res://.godot/imported/woodland_track_03.obj-f1bdb9700e9d4200b217e59c743f8928.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cq02sgdypgmio"
+path="res://.godot/imported/dirt_track_w_terrain.obj-bebe673c453f7fd6f1d32738d33b187b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/dirt_track_w_terrain.obj-bebe673c453f7fd6f1d32738d33b187b.mesh"]
+
+source_file="res://Assets/3D_models/dirt_track_w_terrain.obj"
+dest_files=["res://.godot/imported/dirt_track_w_terrain.obj-bebe673c453f7fd6f1d32738d33b187b.mesh", "res://.godot/imported/dirt_track_w_terrain.obj-bebe673c453f7fd6f1d32738d33b187b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

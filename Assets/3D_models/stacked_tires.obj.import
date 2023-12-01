@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bmvqpongk8cve"
+path="res://.godot/imported/stacked_tires.obj-2e9b597a44dcc37a1b844df6f393860f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stacked_tires.obj-2e9b597a44dcc37a1b844df6f393860f.mesh"]
+
+source_file="res://Assets/3D_models/stacked_tires.obj"
+dest_files=["res://.godot/imported/stacked_tires.obj-2e9b597a44dcc37a1b844df6f393860f.mesh", "res://.godot/imported/stacked_tires.obj-2e9b597a44dcc37a1b844df6f393860f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

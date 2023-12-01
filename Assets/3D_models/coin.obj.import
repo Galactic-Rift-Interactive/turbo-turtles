@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://beiwtfa3xximd"
+path="res://.godot/imported/coin.obj-4b1afc855a603d9a045bc02471e582de.mesh"
+
+[deps]
+
+files=["res://.godot/imported/coin.obj-4b1afc855a603d9a045bc02471e582de.mesh"]
+
+source_file="res://Assets/3D_models/coin.obj"
+dest_files=["res://.godot/imported/coin.obj-4b1afc855a603d9a045bc02471e582de.mesh", "res://.godot/imported/coin.obj-4b1afc855a603d9a045bc02471e582de.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -34,7 +34,7 @@ size = Vector3(1, 7, 5)
 environment = SubResource("Environment_b364w")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 55.4781, 0)
 shadow_enabled = true
 
 [node name="Platform" type="MeshInstance3D" parent="."]

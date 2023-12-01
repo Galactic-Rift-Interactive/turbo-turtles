@@ -1,6 +1,8 @@
-[gd_scene load_steps=31 format=3 uid="uid://bqn4o4v82rtv4"]
+[gd_scene load_steps=33 format=3 uid="uid://bqn4o4v82rtv4"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_1ju3c"]
+[ext_resource type="Texture2D" uid="uid://bp2qyg5lkm3mh" path="res://Assets/textures/turtle_shell.png" id="2_flxh7"]
+[ext_resource type="Texture2D" uid="uid://dfns8baqrh5a3" path="res://Assets/textures/turtle_legs.png" id="3_wpphw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l7tt2"]
 resource_name = "DefaultMaterial"
@@ -28,6 +30,7 @@ _surfaces = [{
 blend_shape_mode = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qu0ye"]
+albedo_texture = ExtResource("2_flxh7")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1xun5"]
 resource_name = "Root Scene_Leg_BR"
@@ -95,6 +98,7 @@ bind/13/bone = -1
 bind/13/pose = Transform3D(0.98953, -0.144324, 8.03266e-08, 7.84598e-08, -1.86265e-08, -1, 0.144324, 0.98953, -7.10778e-09, -0.0118917, -0.00834838, 0.0151005)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bp3bv"]
+albedo_texture = ExtResource("3_wpphw")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_thj6o"]
 resource_name = "Root Scene_Leg_BL"

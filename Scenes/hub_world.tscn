@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dqs8bw8etuhi"]
+[gd_scene load_steps=43 format=3 uid="uid://dqs8bw8etuhi"]
 
 [ext_resource type="Texture2D" uid="uid://c5rgvjnexf6lc" path="res://Assets/Title Screen/SkyBox.png" id="1_uebka"]
 [ext_resource type="PackedScene" uid="uid://bqn4o4v82rtv4" path="res://Scenes/player.tscn" id="2_peew3"]
@@ -8,6 +8,13 @@
 [ext_resource type="ArrayMesh" uid="uid://dxlxs70csi1fx" path="res://Assets/3D_models/rock_arch.obj" id="6_s7a3g"]
 [ext_resource type="Texture2D" uid="uid://b1mipnp5so0a7" path="res://Assets/textures/rock_02_base.png" id="7_8uhdr"]
 [ext_resource type="Shader" path="res://Assets/Shaders/water_shader_01.gdshader" id="8_oexqt"]
+[ext_resource type="ArrayMesh" uid="uid://cps5wcgt3gtuu" path="res://Assets/3D_models/forest_tree_01.obj" id="9_yixop"]
+[ext_resource type="ArrayMesh" uid="uid://drg7suqxvjlp1" path="res://Assets/3D_models/forest_tree_02.obj" id="10_r05xc"]
+[ext_resource type="ArrayMesh" uid="uid://ck0kta3nwu3t6" path="res://Assets/3D_models/palm_tree.obj" id="11_50uft"]
+[ext_resource type="ArrayMesh" uid="uid://bhwl6v6mft7cf" path="res://Assets/3D_models/rock_01.obj" id="12_3b53s"]
+[ext_resource type="ArrayMesh" uid="uid://ckivc4vqcpaj7" path="res://Assets/3D_models/rock_02.obj" id="13_dw8va"]
+[ext_resource type="ArrayMesh" uid="uid://dedv1w3c5fdht" path="res://Assets/3D_models/rock_03.obj" id="14_pr1h1"]
+[ext_resource type="Texture2D" uid="uid://0jxjfuvc0ej8" path="res://Assets/textures/rock_01-03_base.png" id="15_5l81u"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_tc7d8"]
 panorama = ExtResource("1_uebka")
@@ -20,6 +27,11 @@ background_mode = 2
 sky = SubResource("Sky_ecldn")
 ambient_light_color = Color(0, 0.780392, 0.788235, 1)
 reflected_light_source = 2
+fog_light_color = Color(0.129412, 0.552941, 0.568627, 1)
+fog_light_energy = 0.68
+fog_height_density = 16.0
+volumetric_fog_density = 0.0
+adjustment_brightness = 0.01
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mcu55"]
 albedo_texture = ExtResource("5_2lxbo")
@@ -69,7 +81,7 @@ shader_parameter/colour = Vector4(0, 0.2, 1, 1)
 shader_parameter/amount = 0.8
 shader_parameter/beer_factor = 0.2
 shader_parameter/metallic = 0.6
-shader_parameter/specular = 0.5
+shader_parameter/specular = 0.7
 shader_parameter/roughness = 0.2
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_m70rr"]
@@ -79,6 +91,39 @@ subdivide_width = 50
 subdivide_depth = 50
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5tnqu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r6e46"]
+albedo_color = Color(0.341176, 0.341176, 0.380392, 1)
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hq2x"]
+albedo_color = Color(0.921569, 0.607843, 0.898039, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fcy4u"]
+albedo_color = Color(0.921569, 0.607843, 0.898039, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sl4yp"]
+albedo_color = Color(0.741176, 0.388235, 0.25098, 1)
+metallic_specular = 0.65
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ms8m"]
+albedo_color = Color(0.27451, 0.529412, 0.407843, 1)
+metallic_specular = 0.59
+roughness = 0.74
+
+[sub_resource type="MultiMesh" id="MultiMesh_lo6tq"]
+transform_format = 1
+instance_count = 25
+mesh = ExtResource("12_3b53s")
+buffer = PackedFloat32Array(0.484549, -0.085247, -0.871749, -77.2, 0.0660535, 0.996967, -0.060777, 12.8371, 0.873413, -0.0281045, 0.488222, -67.9698, -0.131684, 0, -0.992301, 57.9062, 0, -1.001, 0, -0.534311, -0.992301, 0, 0.131684, 0.675112, 0.950832, 0, 0.312921, 40.275, 0, 1.001, 0, -0.0795695, -0.312921, 0, 0.950832, -2.05472, 0.123853, 0.0432051, -0.992368, -53.4672, -0.173673, 0.98559, 0.0212347, 0.393775, 0.978008, 0.169548, 0.129443, -20.689, -0.172635, -0.218476, -0.961492, 67.1566, 0.198591, 0.94841, -0.25116, 8.34825, 0.965795, -0.234068, -0.120221, 37.6601, -0.577645, 0, 0.817513, -1.58512, 0, 1.001, 0, -0.0795695, -0.817513, 0, -0.577645, -39.8112, -0.221903, 0.123892, -0.9682, -62.1165, -0.238197, 0.956013, 0.176925, 9.22115, 0.946585, 0.269613, -0.182449, -47.8392, -0.150173, 0.307943, -0.940543, -54.3532, -0.370164, 0.864783, 0.342241, 10.4101, 0.917839, 0.399151, -0.0158618, 83.8146, 0.715337, 0.269735, -0.646171, -51.565, -0.164942, 0.962665, 0.219254, 9.40274, 0.680506, -0.0502094, 0.732388, -69.1423, 0.718575, 0, -0.696887, -28.4603, 0, 1.001, 0, -0.518745, 0.696887, 0, 0.718575, -22.0894, -0.19556, 0.00835062, -0.981676, -48.8041, 0.0186092, 1.00082, 0.00480627, -0.392726, 0.981535, -0.017311, -0.19568, 1.29674, 0.249225, -0.238072, -0.939792, -12.3815, 0.446942, 0.889296, -0.106755, 1.62619, 0.860309, -0.393033, 0.327711, -19.5361, 0.216442, -0.00187957, -0.977318, 55.8347, 0.00304146, 1.00099, -0.00125153, -0.517262, 0.977315, -0.00269889, 0.216446, -5.50753, 0.68122, -0.264232, -0.684194, 56.2512, 0.274188, 0.957826, -0.0969112, 6.79623, 0.680265, -0.121458, 0.724216, 44.3786, 0.71885, -0.0432302, -0.695261, -7.58402, 0.0073439, 0.999486, -0.0545533, -0.353829, 0.696565, 0.0340756, 0.718079, -43.0041, -0.706226, 0, -0.709398, -30.8024, 0, -1.001, 0, -0.534311, -0.709398, 0, 0.706226, -26.3152, 0.761237, -0.124941, -0.637895, -77.7483, -0.0469706, 0.969193, -0.245884, 11.7509, 0.648316, 0.216921, 0.731186, -56.023, 0.649143, 0.10061, -0.755309, -15.6319, -0.00794107, 0.993075, 0.125456, -0.270733, 0.761939, -0.0753657, 0.644802, 60.6942, 0.171075, -0.0503105, -0.984989, -73.5678, -0.00672863, 0.999614, -0.0522262, 1.51612, 0.98625, 0.0155467, 0.1705, 22.4463, -0.961642, 0, 0.277932, -36.6749, 0, -1.001, 0, -0.534311, 0.277932, 0, 0.961642, 2.04855, 0.686946, 0.000995929, -0.728083, -61.2909, 0.00963726, 1.0009, 0.0104619, -0.473677, 0.72802, -0.0141893, 0.686867, -6.8175, 0.769877, 0.0634282, -0.636607, -59.9291, -0.227983, 0.957876, -0.180272, 2.62351, 0.597758, 0.283639, 0.751156, -28.1271, 0.232561, -0.190122, -0.954867, 58.2167, 0.0597972, 0.982665, -0.181093, 9.63285, 0.971772, -0.0149682, 0.239659, 74.8422, 0.692508, 0.150755, -0.706899, 3.40285, -0.261312, 0.964986, -0.0501962, 6.04051, 0.673907, 0.219263, 0.706947, 4.01584, 0.508993, -0.00678621, -0.861905, 41.959, 0.0110345, 1.00094, -0.00136453, -0.50348, 0.861861, -0.00880734, 0.509037, 3.10022)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_an3gn"]
+albedo_texture = ExtResource("7_8uhdr")
+metallic_specular = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kkyw"]
+albedo_texture = ExtResource("15_5l81u")
+metallic_specular = 0.0
 
 [node name="Node3D" type="Node3D"]
 
@@ -104,6 +149,7 @@ current = true
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2.8601, 35.8576)
 
 [node name="Turtle" parent="Player" instance=ExtResource("2_peew3")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -4.1771, 0)
 
 [node name="ground" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.53194, 0, 0, 0, 1.153, 0, 0, 0, 1.53194, 0, 0, 0)
@@ -188,3 +234,50 @@ transform = Transform3D(-0.00589912, 0, -0.999983, 0, 1, 0, 0.999983, 0, -0.0058
 [node name="CollisionShape3D" type="CollisionShape3D" parent="world boundary/boundary_04"]
 transform = Transform3D(5, 0, 0, 0, 26.727, 0, 0, 0, 178.824, -5.23799, 11.0746, 0)
 shape = SubResource("BoxShape3D_5tnqu")
+
+[node name="Trees" type="Node3D" parent="."]
+
+[node name="tree_01" type="MeshInstance3D" parent="Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.4303, 0.301417, -15.4341)
+mesh = ExtResource("9_yixop")
+surface_material_override/0 = SubResource("StandardMaterial3D_r6e46")
+surface_material_override/1 = SubResource("StandardMaterial3D_1hq2x")
+surface_material_override/2 = SubResource("StandardMaterial3D_fcy4u")
+
+[node name="tree_02" type="MeshInstance3D" parent="Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.57446, 0.528443)
+mesh = ExtResource("10_r05xc")
+
+[node name="palm_01" type="MeshInstance3D" parent="Trees"]
+transform = Transform3D(4.88692, 0, 0, 0, 4.98842, 0, 0, 0, 4.98842, -70.3969, 0.836214, 14.1719)
+mesh = ExtResource("11_50uft")
+surface_material_override/0 = SubResource("StandardMaterial3D_sl4yp")
+surface_material_override/1 = SubResource("StandardMaterial3D_1ms8m")
+surface_material_override/2 = SubResource("StandardMaterial3D_1ms8m")
+
+[node name="palm_02" type="MeshInstance3D" parent="Trees"]
+transform = Transform3D(0.407737, 0, 4.86988, 0, 4.98842, 0, -4.97103, 0, 0.416205, -70.3969, 0.153428, -12.5115)
+mesh = ExtResource("11_50uft")
+surface_material_override/0 = SubResource("StandardMaterial3D_sl4yp")
+surface_material_override/1 = SubResource("StandardMaterial3D_1ms8m")
+surface_material_override/2 = SubResource("StandardMaterial3D_1ms8m")
+
+[node name="rocks" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518745, 0)
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="rocks"]
+multimesh = SubResource("MultiMesh_lo6tq")
+
+[node name="rock_01" type="MeshInstance3D" parent="rocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.120477, 29.9757)
+mesh = ExtResource("12_3b53s")
+
+[node name="rock_02" type="MeshInstance3D" parent="rocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25.6293)
+mesh = ExtResource("13_dw8va")
+surface_material_override/0 = SubResource("StandardMaterial3D_an3gn")
+
+[node name="rock_03" type="MeshInstance3D" parent="rocks"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.28201, -0.0414238, 28.264)
+mesh = ExtResource("14_pr1h1")
+surface_material_override/0 = SubResource("StandardMaterial3D_4kkyw")

@@ -20,7 +20,7 @@ func save_data():
 	var file = FileAccess.open(DATA_FILE, FileAccess.WRITE)
 	file.store_var(data, true)
 	file.close()
-	
+
 func load_data():
 	if !FileAccess.file_exists(DATA_FILE):
 		save_data()

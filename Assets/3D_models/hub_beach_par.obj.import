@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfw6bjfwt5xej"
+path="res://.godot/imported/hub_beach_par.obj-28a1df8b30d0dadbcf0e2687c19fb58c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hub_beach_par.obj-28a1df8b30d0dadbcf0e2687c19fb58c.mesh"]
+
+source_file="res://Assets/3D_models/hub_beach_par.obj"
+dest_files=["res://.godot/imported/hub_beach_par.obj-28a1df8b30d0dadbcf0e2687c19fb58c.mesh", "res://.godot/imported/hub_beach_par.obj-28a1df8b30d0dadbcf0e2687c19fb58c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

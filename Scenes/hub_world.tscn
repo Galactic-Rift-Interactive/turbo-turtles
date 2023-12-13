@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dqs8bw8etuhi"]
 
 [ext_resource type="Texture2D" uid="uid://c5rgvjnexf6lc" path="res://Assets/Title Screen/SkyBox.png" id="1_uebka"]
-[ext_resource type="PackedScene" uid="uid://bqn4o4v82rtv4" path="res://Scenes/player.tscn" id="2_peew3"]
+[ext_resource type="PackedScene" uid="uid://c7awh8xi406so" path="res://Scenes/BetterPlayer.tscn" id="3_ktbgd"]
 [ext_resource type="Script" path="res://Scripts/camera_controller.gd" id="4_omaik"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_tc7d8"]
@@ -72,4 +72,5 @@ spring_length = 3.0
 [node name="Player" type="Node3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
-[node name="Turtle" parent="Player" instance=ExtResource("2_peew3")]
+[node name="PlayerGood" parent="Player" instance=ExtResource("3_ktbgd")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.791233, 0)

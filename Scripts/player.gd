@@ -55,10 +55,6 @@ func _physics_process(delta):
 	else:
 		velocity.y -= gravity * delta
 
-	# Handle Jump.Al
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "forward", "back")
@@ -75,7 +71,7 @@ func _physics_process(delta):
 		current_speed = max(current_speed - ACCELERATION * delta, 0)
 
 	# Calculate rotation
-	var rotation = Vector3(0, -input_dir.x * 2/(1+current_speed/5), 0)
+	var rotation = Vector3(0, -input_dir.x * 2/(1+current_speed/10), 0)
 
 	# Move the character
 	var move_vector = -forward_vector * current_speed * speed_factor

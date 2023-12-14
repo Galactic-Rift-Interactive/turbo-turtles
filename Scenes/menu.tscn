@@ -24,17 +24,12 @@ layout_mode = 2
 [node name="New Game" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
-text = "New Game"
+text = "Play"
 
-[node name="Load Game" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Help" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
-text = "Load Game"
-
-[node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 50
-text = "Options"
+text = "Help"
 
 [node name="About" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -56,7 +51,6 @@ theme_override_font_sizes/font_size = 80
 text = "Main Menu"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/New Game" to="." method="_on_new_game_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Load Game" to="." method="_on_load_game_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Help" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/About" to="." method="_on_about_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

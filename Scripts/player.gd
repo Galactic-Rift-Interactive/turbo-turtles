@@ -6,7 +6,8 @@ const JUMP_VELOCITY = 4.5
 const MAX_SPEED = 50.0
 const MAX_TURBO_SPEED = 100.0
 const ACCELERATION = 5.0
-const ROTATION_SPEED = 2.0
+const MIN_ROTATION_SPEED = 2.0
+const MAX_ROTATION_SPEED = 3.0
 const TURBO_SPEED_FACTOR = 3.0
 const TURBO_INCREASE_AMOUNT = 10.0
 const TURBO_DECREASE_AMOUNT = 20.0
@@ -23,7 +24,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 func _ready():
 # Assuming you have an AnimationTree node as a child of this node
 	animation_tree = $AnimationTree
-
+	
 func reset_to_last_position():
 	position = last_position
 	position.y += 1
@@ -47,9 +48,9 @@ func _physics_process(delta):
 		prevent_turbo = false
 	if prevent_turbo:
 		turbo_fuel = clamp(turbo_fuel + TURBO_INCREASE_AMOUNT * delta, 0, 100)
-
+	
 	#$Label3D.text = "TURBO: " + str(int(turbo_fuel))
-
+	
 	if is_on_floor():
 		last_position = position
 	else:
@@ -62,20 +63,23 @@ func _physics_process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir = Input.get_vector("left", "right", "forward", "back")
-
+	
 	# Calculate movement
 	var forward_vector = transform.basis.z
 	var movement = forward_vector * input_dir.y
-
+	
 	if input_dir.y < 0:
 		current_speed = min(current_speed + ACCELERATION * delta, max_speed)
 	elif input_dir.y > 0:
 		current_speed = max(current_speed - ACCELERATION * delta * 10, 0)
 	else:
 		current_speed = max(current_speed - ACCELERATION * delta, 0)
-
+		
 	# Calculate rotation
-	var rotation = Vector3(0, -input_dir.x * 2/(1+current_speed/5), 0)
+	
+	var rotation_speed = MAX_ROTATION_SPEED * pow(1 - min(current_speed / MAX_SPEED, 1), 2) + MIN_ROTATION_SPEED
+	
+	var rotation = Vector3(0, -input_dir.x * rotation_speed, 0)
 
 	# Move the character
 	var move_vector = -forward_vector * current_speed * speed_factor
@@ -84,10 +88,11 @@ func _physics_process(delta):
 
 	# Rotate the character
 	rotate_y(rotation.y * delta)
-
+	
 	var playback_speed = 1.0 + current_speed
 	animation_tree.set("parameters/Run/TimeScale/scale", playback_speed)
-
+	
 	$AnimationTree.set("parameters/conditions/idle", current_speed == 0)
 	$AnimationTree.set("parameters/conditions/run", current_speed != 0)
 	move_and_slide()
+	

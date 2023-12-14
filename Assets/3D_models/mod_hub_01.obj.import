@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://beubx6unell18"
+path="res://.godot/imported/mod_hub_01.obj-d2153d074fee2b27074b88cde441bec7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mod_hub_01.obj-d2153d074fee2b27074b88cde441bec7.mesh"]
+
+source_file="res://Assets/3D_models/mod_hub_01.obj"
+dest_files=["res://.godot/imported/mod_hub_01.obj-d2153d074fee2b27074b88cde441bec7.mesh", "res://.godot/imported/mod_hub_01.obj-d2153d074fee2b27074b88cde441bec7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

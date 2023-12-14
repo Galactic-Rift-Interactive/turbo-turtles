@@ -1,47 +1,42 @@
 # Blender 3.6.5 MTL File: 'banner.blend'
 # www.blender.org
 
-newmtl Material.003
+newmtl Material.001
+Ns 471.095062
+Ka 1.000000 1.000000 1.000000
 Ks 0.627273 0.627273 0.627273
 Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-Pr 0.313636
-Pm 0.000000
-Ps 0.000000
-Pc 0.000000
-Pcr 0.030000
-aniso 0.000000
-anisor 0.000000
+map_Kd /home/th/Vault-Lab/CSCE_552/3D_Game_Assets/Textures/banner_checker_base.png
+
+newmtl Material.003
+Ns 471.095062
+Ka 1.000000 1.000000 1.000000
+Ks 0.627273 0.627273 0.627273
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
 map_Kd /home/th/Vault-Lab/CSCE_552/3D_Game_Assets/Textures/banner_checker_base.png
 
 newmtl Material.004
+Ns 5.289255
+Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-Pr 0.927273
-Pm 0.000000
-Ps 0.000000
-Pc 0.000000
-Pcr 0.030000
-aniso 0.000000
-anisor 0.000000
 map_Kd /home/th/Vault-Lab/CSCE_552/3D_Game_Assets/Textures/banner_pole_base.png
 
 newmtl Material.005
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.700000 0.700000 0.700000
 Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-Pr 0.500000
-Pm 0.000000
-Ps 0.000000
-Pc 0.000000
-Pcr 0.030000
-aniso 0.000000
-anisor 0.000000

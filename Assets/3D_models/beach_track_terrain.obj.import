@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b73e3se7k3db3"
+path="res://.godot/imported/beach_track_terrain.obj-203fc31667072002fbb582186cc686ef.mesh"
+
+[deps]
+
+files=["res://.godot/imported/beach_track_terrain.obj-203fc31667072002fbb582186cc686ef.mesh"]
+
+source_file="res://Assets/3D_models/beach_track_terrain.obj"
+dest_files=["res://.godot/imported/beach_track_terrain.obj-203fc31667072002fbb582186cc686ef.mesh", "res://.godot/imported/beach_track_terrain.obj-203fc31667072002fbb582186cc686ef.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

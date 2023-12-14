@@ -48,7 +48,7 @@ data = PackedVector3Array(26.4847, 10.8378, 46.9211, 26.4847, 10.77, 46.9211, 26
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r1kff"]
 render_priority = 0
 shader = ExtResource("6_bxtra")
-shader_parameter/colour = Vector4(0, 2, 3, 1)
+shader_parameter/colour = Vector4(0, -1.8, 1, 1)
 shader_parameter/amount = 0.8
 shader_parameter/beer_factor = 0.2
 shader_parameter/metallic = 0.6
@@ -68,7 +68,6 @@ environment = SubResource("Environment_4xs37")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
-shadow_enabled = true
 
 [node name="ground" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 34.6314, 0)

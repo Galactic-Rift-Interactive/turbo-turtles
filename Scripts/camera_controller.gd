@@ -16,3 +16,13 @@ func _process(delta):
 func _input(event):
 	if event is InputEventMouseMotion:
 		rotation.y -= event.relative.x / 1000 * sensitivity
+
+
+func _on_area_3d_body_entered(body):
+	if body.name == "Turtle":
+		get_tree().change_scene_to_file("res://Scenes/beach_race.tscn")
+
+
+func _on_area_3d_body_entered1(body):
+	if body.name == "Turtle":
+		get_tree().change_scene_to_file("res://Scenes/road_race.tscn")

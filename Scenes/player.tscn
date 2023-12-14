@@ -575,4 +575,4 @@ transform = Transform3D(4, 0, 0, 0, 3.95474, 0.600005, 0, -0.600005, 3.95474, 0,
 
 [node name="Label3D" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00392604, 11.4218, 15.5147)
-text = "Turbo Fueld: 0"
+text = "Turbo Fuel: 0"

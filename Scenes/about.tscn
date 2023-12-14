@@ -43,6 +43,7 @@ Sound Design: Alex Lay-Calvert
 "
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
 offset_left = 50.0
 offset_top = 50.0
 offset_right = 174.0

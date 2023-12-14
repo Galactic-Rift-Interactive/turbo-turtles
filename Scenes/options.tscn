@@ -38,16 +38,18 @@ text = "Controls"
 [node name="Controls" type="Label" parent="."]
 layout_mode = 0
 offset_left = 370.0
-offset_top = 104.0
+offset_top = 84.0
 offset_right = 794.0
-offset_bottom = 316.0
+offset_bottom = 349.0
 theme_override_font_sizes/font_size = 36
 text = "W - Accelerate
 S - Brake
 A/D - Turn Left/Right
+Shift: Turbo Boost
 Escape - Pause/Unpause"
 
 [node name="S2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 285.0
 offset_top = 322.0
 offset_right = 873.0
@@ -56,6 +58,7 @@ theme_override_font_sizes/font_size = 80
 text = "Getting Started"
 
 [node name="Getting Started" type="Label" parent="."]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 427.0
 offset_right = 2161.0

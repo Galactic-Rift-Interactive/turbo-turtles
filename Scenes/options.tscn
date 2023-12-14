@@ -13,10 +13,10 @@ script = ExtResource("1_03ens")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 523.0
-offset_top = 404.0
-offset_right = 647.0
-offset_bottom = 481.0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 174.0
+offset_bottom = 127.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -26,13 +26,44 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Back"
 
-[node name="Label" type="Label" parent="."]
+[node name="S1" type="Label" parent="."]
+layout_mode = 0
 offset_left = 424.0
-offset_top = 86.0
-offset_right = 729.0
-offset_bottom = 199.0
+offset_top = -13.0
+offset_right = 751.0
+offset_bottom = 100.0
 theme_override_font_sizes/font_size = 80
-text = "Options
-"
+text = "Controls"
+
+[node name="Controls" type="Label" parent="."]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 104.0
+offset_right = 794.0
+offset_bottom = 316.0
+theme_override_font_sizes/font_size = 36
+text = "W - Accelerate
+S - Brake
+A/D - Turn Left/Right
+Escape - Pause/Unpause"
+
+[node name="S2" type="Label" parent="."]
+offset_left = 285.0
+offset_top = 322.0
+offset_right = 873.0
+offset_bottom = 435.0
+theme_override_font_sizes/font_size = 80
+text = "Getting Started"
+
+[node name="Getting Started" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 427.0
+offset_right = 2161.0
+offset_bottom = 639.0
+theme_override_font_sizes/font_size = 36
+text = "The arches that lead to the beach and the forest do not have 
+tracks yet, walk down the path of the other arch to enter a race
+
+TIP: Slow down to turn faster!"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

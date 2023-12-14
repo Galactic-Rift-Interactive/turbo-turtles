@@ -14,13 +14,13 @@ extends Node3D
 		return instance_amount
 	set(value):
 		instance_amount = value
-		create_multimesh()
+		#create_multimesh()
 @export var instance_spacing : int = 20 :
 	get:
 		return instance_spacing
 	set(value):
 		instance_spacing = value
-		create_multimesh()
+		#create_multimesh()
 @export var instance_height : float = 1
 @export var instance_width : float = 1
 @export var pos_randomize : float = 5 :
@@ -28,43 +28,43 @@ extends Node3D
 		return pos_randomize
 	set(value):
 		pos_randomize = value
-		create_multimesh()
+		#create_multimesh()
 @export_range(0,PI) var instance_Y_rot : float = 0.0 :
 	get:
 		return instance_Y_rot
 	set(value):
 		instance_Y_rot = value
-		create_multimesh()
+		#create_multimesh()
 @export_range(0,PI) var instance_X_rot : float = 0.0 :
 	get:
 		return instance_X_rot
 	set(value):
 		instance_X_rot = value
-		create_multimesh()
+		#create_multimesh()
 @export_range(0,PI) var instance_Z_rot : float = 0.0 :
 	get:
 		return instance_Z_rot
 	set(value):
 		instance_Z_rot = value
-		create_multimesh()
+		#create_multimesh()
 @export var rot_y_randomize : float = 0.0 :
 	get:
 		return rot_y_randomize
 	set(value):
 		rot_y_randomize = value
-		create_multimesh()
+		#create_multimesh()
 @export var rot_x_randomize : float = 0.0 :
 	get:
 		return rot_x_randomize
 	set(value):
 		rot_x_randomize = value
-		create_multimesh()
+		#create_multimesh()
 @export var rot_z_randomize : float = 0.0 :
 	get:
 		return rot_z_randomize
 	set(value):
 		rot_z_randomize = value
-		create_multimesh()
+		#create_multimesh()
 @export var instance_mesh : MeshInstance3D
 @export var surface_mesh : MeshInstance3D
 
@@ -199,13 +199,16 @@ func is_position_in_surface(t_position):
 	return aabb.has_point(local_position)
 
 func _process(delta):
-	if center.global_transform.origin != center_last_pos:
-		distribute_meshes()
-	center_last_pos = center.global_transform.origin
+	#if center.global_transform.origin != center_last_pos:
+	#	distribute_meshes()
+	#center_last_pos = center.global_transform.origin
+	pass
 
 func _update():
-	self.global_position = Vector3(center.global_position.x,0.0,center.global_position.z).snapped(Vector3(1,0,1));
-	create_multimesh()
+	#self.global_position = Vector3(center.global_position.x,0.0,center.global_position.z).snapped(Vector3(1,0,1));
+	#create_multimesh()
+	pass
 
 func _ready():
-	create_multimesh()
+	#create_multimesh()
+	pass
